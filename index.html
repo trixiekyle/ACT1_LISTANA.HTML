@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odd and Even Number Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>Odd and Even Number Calculator</h1>
+      <p class="intro">Enter a positive whole number to display the odd and even numbers from 1 to n.</p>
+
+      <form id="numberForm">
+        <label for="numberInput">Input n:</label>
+        <input
+          type="text"
+          id="numberInput"
+          name="numberInput"
+          placeholder="Enter a positive whole number"
+          autocomplete="off"
+        >
+
+        <div class="button-group">
+          <button type="submit" id="displayButton">Display</button>
+          <button type="button" id="clearButton" class="clear-button">Clear</button>
+        </div>
+      </form>
+
+      <section id="results" class="results" aria-live="polite" hidden>
+        <h2>Results</h2>
+        <p><strong>Input n:</strong> <span id="inputResult"></span></p>
+        <p><strong>Odd numbers:</strong> <span id="oddNumbers"></span></p>
+        <p><strong>Even numbers:</strong> <span id="evenNumbers"></span></p>
+        <p><strong>Sum of odd numbers:</strong> <span id="oddSum"></span></p>
+        <p><strong>Sum of even numbers:</strong> <span id="evenSum"></span></p>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
